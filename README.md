@@ -11,8 +11,8 @@ This repository contains the Terraform code to set up an AWS infrastructure with
     │                  VPC                      │
     │                                           │
     │   ┌───────────────────────────────────┐   │
-    │   │              EC2                  │   │
-    │   │           Instance                │   │
+    │   │                EC2                │   │
+    │   │             Instance              │   │
     │   │                                   │   │
     │   │      ┌───────────────────┐        │   │
     │   │      │   Public Subnet   │        │   │
@@ -22,8 +22,8 @@ This repository contains the Terraform code to set up an AWS infrastructure with
     │                                           │
     │                                           │
     │   ┌───────────────────────────────────┐   │
-    │   │                 RDS               │   │
-    │   │               Database            │   │
+    │   │               RDS                 │   │
+    │   │             Database              │   │
     │   │                                   │   │
     │   │      ┌───────────────────┐        │   │
     │   │      │   Private Subnet  │        │   │
