@@ -3,7 +3,7 @@
 This repository contains the Terraform code to set up an AWS infrastructure with the following components:
 
 # EC2 instance
-Custom VPC with 4 subnets ( 2 Public & 2 Private) /
+Custom VPC with 4 subnets ( 2 Public & 2 Private) /*
 Installation of basic software on the EC2 instance
 Attachment of the public subnet to the EC2 instance
 Attachment of a role to the EC2 instance with S3 access
@@ -32,3 +32,5 @@ cd repository
 - Initialize the Terraform configuration.
 
 terraform init
+
+
