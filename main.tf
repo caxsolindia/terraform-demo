@@ -62,33 +62,40 @@ module "rds-module" {
 
 # Outputs 
 
-# output "bucket_details" {
-#   value = {
-#     bucket_name = module.s3-module.bucket_name
-#     bucket_arn  = module.s3-module.bucket_arn
-#   }
-# }
+output "bucket_details" {
+  value = {
+    bucket_name = module.s3-module.bucket_name
+    bucket_arn  = module.s3-module.bucket_arn
+  }
+}
 
-# output "ec2_instance_details" {
-#   value = {
-#     instance_id       = module.ec2-module.instance_id
-#     public_ip         = module.ec2-module.public_ip
-#     private_dns       = module.ec2-module.private_dns
-#     security_group_id = module.ec2-module.security_group_id
-#   }
-# }
+output "ec2_instance_details" {
+  value = {
+    instance_id       = module.ec2-module.instance_id
+    public_ip         = module.ec2-module.public_ip
+    private_dns       = module.ec2-module.private_dns
+    security_group_id = module.ec2-module.security_group_id
+  }
+}
 
-# output "vpc_details" {
-#   value = {
-#     vpc_id             = module.vpc-module.vpc_id
-#     public_subnet_id   = module.vpc-module.public_subnet_id
-#     private_subnet_id  = module.vpc-module.private_subnet_id
-#     private_subnet_id1 = module.vpc-module.private_subnet_id1
-#   }
-# }
+output "vpc_details" {
+  value = {
+    vpc_id             = module.vpc-module.vpc_id
+    public_subnet_id   = module.vpc-module.public_subnet_id
+    public_subnet_id1   = module.vpc-module.public_subnet_id1
+    private_subnet_id  = module.vpc-module.private_subnet_id
+    private_subnet_id1 = module.vpc-module.private_subnet_id1
+  }
+}
 
-# output "rds_details" {
-#   value = {
-#     rds_endpoint = module.rds-module.rds_endpoint
-#   }
-# }
+output "rds_details" {
+  value = {
+    rds_endpoint = module.rds-module.rds_endpoint
+  }
+}
+
+output "Load Balancer End Point" {
+  value = {
+    LB = module.ec2-module.dns_name
+  }
+}
