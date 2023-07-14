@@ -45,6 +45,16 @@ module "ec2-module" {
   depends_on       = [module.vpc-module]
 }
 
+module "LB-module" {
+  source = "./LB-module"
+  vpc_id           = module.vpc-module.vpc_id
+  public_subnet_id = module.vpc-module.public_subnet_id
+  public_subnet_id1 = module.vpc-module.public_subnet_id1
+  instance_id       = module.ec2-module.instance_id
+  security_group_id = module.ec2-module.security_group_id
+  depends_on = [module.ec2-module]
+}
+
 module "rds-module" {
   source             = "./rds-module"
   username           = var.username
@@ -91,5 +101,12 @@ output "vpc_details" {
 output "rds_details" {
   value = {
     rds_endpoint = module.rds-module.rds_endpoint
+  }
+}
+
+output "LB_details" {
+  value = {
+    alb_dns_name = module.LB-module.dns_name
+    alb_target_group_arn = module.LB-module.arn
   }
 }
