@@ -1,6 +1,4 @@
 # Terraform Infrastructure Setup
-This repository contains the Terraform code to set up an AWS infrastructure with the following components:
-
     ┌───────────────────────────────────────────┐
     │                   Load                    │
     │                 Balancer                  │
@@ -33,8 +31,8 @@ This repository contains the Terraform code to set up an AWS infrastructure with
     └───────────────────────────────────────────┘
 
 
+This repository contains the Terraform code to set up an AWS infrastructure with the following components:
 
-# EC2 instance
 1. Custom VPC with 4 subnets ( 2 Public & 2 Private) <br>
 2. Installation of basic software on the EC2 instance <br>
 3. Attachment of the public subnet to the EC2 instance <br>
