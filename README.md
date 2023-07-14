@@ -23,11 +23,11 @@ Terraform installed on your local machine
 
 - Clone the repository to your local machine.
   
-git clone https://github.com/your/repository.git
+git clone https://github.com/caxsolindia/terraform-demo.git
 
 - Navigate to the repository's directory.
 
-cd repository
+cd terraform-demo
 
 - Initialize the Terraform configuration.
 
