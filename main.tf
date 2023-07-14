@@ -94,7 +94,7 @@ output "rds_details" {
   }
 }
 
-output "Load Balancer End Point" {
+output "Load_Balancer_End_Point" {
   value = {
     LB = module.ec2-module.dns_name
   }
