@@ -36,7 +36,7 @@ This repository contains the Terraform code to set up an AWS infrastructure with
 1. Custom VPC with 4 subnets ( 2 Public & 2 Private) <br>
 2. Installation of basic software on the EC2 instance <br>
 3. Attachment of the public subnet to the EC2 instance <br>
-4. Attachment of a role to the EC2 instance with S3 access <br>
+4. Attachment of a role to the EC2 instance with Cloud Watch access <br>
 5. Creation of an RDS database <br>
 6. Attachment of the RDS database to the private subnet <br>
 7. Configuration of the RDS database security group to allow access from the EC2 instance <br>
