@@ -37,4 +37,26 @@ terraform init
 
 terraform apply
 
+Review the planned changes and enter yes when prompted to proceed with the deployment.
+
+Wait for Terraform to provision the infrastructure. The process may take a few minutes.
+
+Once the deployment is complete, you will find the necessary outputs in the Terraform output.
+
+# Cleaning Up
+
+To remove the infrastructure created by Terraform, follow these steps:
+
+**- Navigate to the repository's directory.**
+
+cd terraform-demo
+
+**- Destroy the Terraform-managed infrastructure.**
+
+terraform destroy
+
+
+
+
+
 
