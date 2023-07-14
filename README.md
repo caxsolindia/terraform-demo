@@ -1,6 +1,39 @@
 # Terraform Infrastructure Setup
 This repository contains the Terraform code to set up an AWS infrastructure with the following components:
 
+    ┌───────────────────────────────────────────┐
+    │                   Load                    │
+    │                 Balancer                  │
+    └───────────────────────────────────────────┘
+                        │
+                        ▼
+    ┌───────────────────────────────────────────┐
+    │                  VPC                      │
+    │                                           │
+    │   ┌───────────────────────────────────┐   │
+    │   │              EC2                  │   │
+    │   │           Instance                │   │
+    │   │                                   │   │
+    │   │      ┌───────────────────┐        │   │
+    │   │      │   Public Subnet   │        │   │
+    │   │      └───────────────────┘        │   │
+    │   │                                   │   │
+    │   └───────────────────────────────────┘   │
+    │                                           │
+    │                                           │
+    │   ┌───────────────────────────────────┐   │
+    │   │                 RDS               │   │
+    │   │               Database            │   │
+    │   │                                   │   │
+    │   │      ┌───────────────────┐        │   │
+    │   │      │   Private Subnet  │        │   │
+    │   │      └───────────────────┘        │   │
+    │   │                                   │   │
+    │   └───────────────────────────────────┘   │
+    └───────────────────────────────────────────┘
+
+
+
 # EC2 instance
 1. Custom VPC with 4 subnets ( 2 Public & 2 Private) <br>
 2. Installation of basic software on the EC2 instance <br>
