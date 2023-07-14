@@ -1,16 +1,15 @@
-# terraform-demo
 # Terraform Infrastructure Setup
 This repository contains the Terraform code to set up an AWS infrastructure with the following components:
 
 # EC2 instance
-Custom VPC with 4 subnets ( 2 Public & 2 Private) <br>
-Installation of basic software on the EC2 instance <br>
-Attachment of the public subnet to the EC2 instance <br>
-Attachment of a role to the EC2 instance with S3 access <br>
-Creation of an RDS database <br>
-Attachment of the RDS database to the private subnet <br>
-Configuration of the RDS database security group to allow access from the EC2 instance <br>
-Mapping of the EC2 instance with a Load Balancer <br>
+1. Custom VPC with 4 subnets ( 2 Public & 2 Private) <br>
+2. Installation of basic software on the EC2 instance <br>
+3. Attachment of the public subnet to the EC2 instance <br>
+4. Attachment of a role to the EC2 instance with S3 access <br>
+5. Creation of an RDS database <br>
+6. Attachment of the RDS database to the private subnet <br>
+7. Configuration of the RDS database security group to allow access from the EC2 instance <br>
+8. Mapping of the EC2 instance with a Load Balancer <br>
 
 # Prerequisites
 
@@ -18,6 +17,8 @@ Before you begin, make sure you have the following prerequisites set up: <br>
 
 An AWS account with appropriate access permissions <br>
 Terraform installed on your local machine
+
+**In provider.tf pls fill your aws access key and secret key.**
 
 # Usage
 
