@@ -13,7 +13,3 @@ output "private_dns" {
 output "security_group_id" {
   value = "${aws_security_group.sg.id}"
 }
-
-output "LB" {
-  value = "${aws_lb.my-aws-alb.dns_name}"
-}
