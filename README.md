@@ -1,6 +1,6 @@
 # Terraform Infrastructure Setup
 
-![image](https://github.com/caxsolindia/terraform-demo/assets/115705180/79853651-09ae-4d69-85dc-676accf465d5)
+![image](https://github.com/caxsolindia/terraform-demo/assets/115705180/ee7d1b77-5573-437c-b395-6c8596307cbf)
 
 
 This repository contains the Terraform code to set up an AWS infrastructure with the following components:
